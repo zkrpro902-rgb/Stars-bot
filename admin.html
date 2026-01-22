@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orizon Bot - Panel Admin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin-style.css">
+</head>
+<body>
+    <div class="bg-animation"></div>
+    
+    <div id="login-screen">
+        <div class="login-container">
+            <div class="login-box">
+                <h2>🔐 ADMIN</h2>
+                <div id="error-message" class="error" style="display: none;"></div>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label>Nom d'utilisateur</label>
+                        <input type="text" id="username" required autocomplete="username">
+                    </div>
+                    <div class="form-group">
+                        <label>Mot de passe</label>
+                        <input type="password" id="password" required autocomplete="current-password">
+                    </div>
+                    <button type="submit" class="btn-login">SE CONNECTER</button>
+                </form>
+                <div style="margin-top: 30px; text-align: center; color: #666; font-size: 0.9rem;">
+                    <p>Identifiants par défaut:</p>
+                    <p>admin / admin123</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="admin-panel" style="display: none;">
+        <header>
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">ORIZON ADMIN</div>
+                    <div class="user-info">
+                        <span class="user-badge">
+                            <span id="user-role">Owner</span> - <span id="user-name">Admin</span>
+                        </span>
+                        <button class="btn-logout" onclick="logout()">Déconnexion</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="container">
+            <div class="dashboard">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" id="admin-servers">0</div>
+                        <div class="stat-label">Serveurs</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="admin-users">0</div>
+                        <div class="stat-label">Utilisateurs</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="admin-commands">120</div>
+                        <div class="stat-label">Commandes</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">🟢</div>
+                        <div class="stat-label">En ligne</div>
+                    </div>
+                </div>
+                
+                <h2 class="section-title">📊 Logs du Bot</h2>
+                <button class="refresh-btn" onclick="loadLogs()">🔄 Rafraîchir</button>
+                
+                <div class="logs-container" id="logs-container">
+                    <div class="no-logs">
+                        <h3>Chargement des logs...</h3>
+                        <p>Les logs apparaîtront ici dans quelques instants.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="admin-script.js"></script>
+</body>
+</html>

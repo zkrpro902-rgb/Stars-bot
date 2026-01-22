@@ -1,0 +1,20 @@
+[
+  {
+    "timestamp": "2026-01-21T16:30:00",
+    "type": "success",
+    "message": "✅ Bot démarré avec succès",
+    "details": "Connecté à 1 serveur avec 11 utilisateurs"
+  },
+  {
+    "timestamp": "2026-01-21T16:31:15",
+    "type": "info",
+    "message": "📥 Membre rejoint",
+    "details": "ElѾzkR メ⁣⁣‎ˡ a rejoint le serveur"
+  },
+  {
+    "timestamp": "2026-01-21T16:32:30",
+    "type": "warning",
+    "message": "🛡️ Anti-Spam",
+    "details": "Message supprimé automatiquement | Raison: Anti-Spam (5 messages en 10s)"
+  }
+]

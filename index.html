@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orizon Bot - Le bot Discord le plus complet avec musique, modération, logs, VIP et plus de 120 commandes !">
+    <title>Orizon Bot - Le Bot Discord Ultime 💎</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-animation"></div>
+    
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">ORIZON</div>
+                <ul class="nav-links">
+                    <li><span class="status-badge online">🟢 En ligne</span></li>
+                    <li><a href="#stats">Statistiques</a></li>
+                    <li><a href="#features">Fonctionnalités</a></li>
+                    <li><a href="#commands">Commandes</a></li>
+                    <li><a href="#vip">VIP</a></li>
+                    <li><a href="admin.html" class="btn-admin">🔐 Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>ORIZON BOT</h1>
+            <p>Le Bot Discord le plus complet et puissant</p>
+            <div class="cta-buttons">
+                <a href="https://discord.com/api/oauth2/authorize?client_id=1446535743273963655&permissions=8&scope=bot%20applications.commands" class="btn btn-primary">Ajouter au serveur</a>
+                <a href="https://discord.gg/xaziloin" class="btn btn-secondary">Serveur support</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="stats" id="stats">
+        <div class="container">
+            <h2 class="section-title">Statistiques en Direct</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">🌍</div>
+                    <div class="stat-number" id="servers-count">0</div>
+                    <div class="stat-label">Serveurs</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-number" id="users-count">0</div>
+                    <div class="stat-label">Utilisateurs</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-number" id="commands-count">120</div>
+                    <div class="stat-label">Commandes</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">💎</div>
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Disponibilité</div>
+                </div>
+            </div>
+            <div class="last-update">
+                Dernière mise à jour : <span id="last-update-time">Chargement...</span>
+            </div>
+        </div>
+    </section>
+    
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Fonctionnalités Principales</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎵</div>
+                    <h3>Musique Lavalink V4</h3>
+                    <p>Système de musique ultra-performant avec recherche multi-choix, playlists personnalisées, import Spotify, et 15 radios.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Protection Anti-Raid</h3>
+                    <p>9 systèmes de protection : Anti-Bot, Anti-Token, Anti-Spam, Anti-Raid, Anti-Link, Anti-MassCap, Anti-MassPing, Anti-Invite, Anti-YoungAccount</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Logs Détaillés</h3>
+                    <p>20 modules de logs : modération, vocal, messages, membres, salons, rôles, émojis, stickers, threads, boosters, et plus !</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💎</div>
+                    <h3>Système VIP</h3>
+                    <p>Codes VIP, commandes exclusives, rôles de couleur personnalisés, embeds custom, et avantages premium.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>Configuration Interactive</h3>
+                    <p>Menu de configuration style DraftBot avec 21 catégories et interface intuitive.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎫</div>
+                    <h3>Tickets & Support</h3>
+                    <p>Système de tickets complet avec panels personnalisables et gestion avancée.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎉</div>
+                    <h3>Giveaways</h3>
+                    <p>Créez des concours avec réactions, durée personnalisée, et sélection automatique des gagnants.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>Backups</h3>
+                    <p>Sauvegarde complète du serveur : rôles, salons, permissions, émojis. Restauration en un clic.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>IA Images</h3>
+                    <p>Génération d'images IA avec 10 styles différents : réaliste, anime, cyberpunk, aquarelle, et plus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="commands" id="commands">
+        <div class="container">
+            <h2 class="section-title">Plus de 120 Commandes</h2>
+            <div class="commands-list">
+                <div class="command-tag">/play - Musique</div>
+                <div class="command-tag">/config - Configuration</div>
+                <div class="command-tag">/protection - Anti-Raid</div>
+                <div class="command-tag">/logs-setup - Logs</div>
+                <div class="command-tag">/ticket-panel - Tickets</div>
+                <div class="command-tag">/giveaway - Concours</div>
+                <div class="command-tag">/backup-create - Backup</div>
+                <div class="command-tag">/imagine - IA Images</div>
+                <div class="command-tag">/ban - Modération</div>
+                <div class="command-tag">/warn - Avertissements</div>
+                <div class="command-tag">/serverinfo - Infos</div>
+                <div class="command-tag">/radio - Radio</div>
+                <div class="command-tag">+vip - Statut VIP</div>
+                <div class="command-tag">+spotify-import - Import Spotify</div>
+                <div class="command-tag">+vip-color - Couleur custom</div>
+                <div class="command-tag">+vip-embed - Embed perso</div>
+                <div class="command-tag">+vip-stats - Stats avancées</div>
+                <div class="command-tag">+vip-announce - Annonces</div>
+                <div class="command-tag">Orizon - Assistant vocal</div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="vip-section" id="vip">
+        <div class="container">
+            <h2 class="section-title">Devenez VIP</h2>
+            <div class="vip-badge">
+                <h2>💎 MEMBRE VIP 💎</h2>
+                <p>Accédez à des fonctionnalités exclusives</p>
+            </div>
+            <div class="vip-features">
+                <div class="vip-feature">
+                    <h4>🎨 Rôle de Couleur</h4>
+                    <p>Créez votre rôle avec la couleur de votre choix</p>
+                </div>
+                <div class="vip-feature">
+                    <h4>📝 Embeds Custom</h4>
+                    <p>Créez des messages embed personnalisés</p>
+                </div>
+                <div class="vip-feature">
+                    <h4>✏️ Changer Surnoms</h4>
+                    <p>Modifiez le surnom de n'importe qui</p>
+                </div>
+                <div class="vip-feature">
+                    <h4>⏱️ Slowmode</h4>
+                    <p>Contrôlez le débit de messages</p>
+                </div>
+                <div class="vip-feature">
+                    <h4>📊 Stats Avancées</h4>
+                    <p>Statistiques détaillées du serveur</p>
+                </div>
+                <div class="vip-feature">
+                    <h4>📢 Annonces</h4>
+                    <p>Envoyez des annonces dans tous les salons</p>
+                </div>
+                <div class="vip-feature">
+                    <h4>💎 Badge VIP</h4>
+                    <p>Badge personnalisé exclusif</p>
+                </div>
+                <div class="vip-feature">
+                    <h4>🎯 Support Prioritaire</h4>
+                    <p>Assistance rapide et dédiée</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Orizon Bot - Tous droits réservés</p>
+            <p>Créé avec 💎 par ElѾzkR メ⁣⁣‎ˡ</p>
+            <div class="social-links">
+                <a href="https://discord.gg/xaziloin" title="Discord">🎮</a>
+                <a href="#vip" title="VIP">💎</a>
+                <a href="#stats" title="Stats">⚡</a>
+            </div>
+            <p style="margin-top: 20px; color: #666; font-size: 0.85rem;">
+                Bot ID: 1446535743273963655 | Version 4.0
+            </p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

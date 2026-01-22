@@ -1,0 +1,230 @@
+/* Styles spécifiques pour la page admin */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-box {
+    background: rgba(10, 14, 39, 0.8);
+    border: 2px solid var(--primary);
+    border-radius: 20px;
+    padding: 60px 50px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 20px 60px rgba(0, 217, 255, 0.3);
+}
+
+.login-box h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px 20px;
+    background: rgba(0, 217, 255, 0.05);
+    border: 1px solid rgba(0, 217, 255, 0.3);
+    border-radius: 10px;
+    color: var(--light);
+    font-family: 'Space Mono', monospace;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+}
+
+.btn-login {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+.btn-login:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 217, 255, 0.5);
+}
+
+.error {
+    background: rgba(255, 0, 0, 0.1);
+    border: 1px solid #ff0000;
+    color: #ff0000;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-badge {
+    background: rgba(0, 217, 255, 0.1);
+    border: 1px solid var(--primary);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.btn-logout {
+    background: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-logout:hover {
+    background: #cc0000;
+    transform: translateY(-2px);
+}
+
+.dashboard {
+    padding: 40px 0;
+}
+
+.logs-container {
+    background: rgba(10, 14, 39, 0.6);
+    border: 1px solid rgba(0, 217, 255, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.log-entry {
+    background: rgba(0, 217, 255, 0.05);
+    border-left: 3px solid var(--primary);
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.log-entry:hover {
+    background: rgba(0, 217, 255, 0.1);
+    transform: translateX(5px);
+}
+
+.log-time {
+    color: var(--accent);
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.log-type {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.log-type.info { background: rgba(0, 217, 255, 0.2); color: var(--primary); }
+.log-type.warning { background: rgba(255, 221, 0, 0.2); color: var(--accent); }
+.log-type.error { background: rgba(255, 0, 0, 0.2); color: #ff0000; }
+.log-type.success { background: rgba(0, 255, 0, 0.2); color: #00ff00; }
+
+.log-message {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.log-details {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.refresh-btn {
+    background: var(--primary);
+    color: var(--darker);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.refresh-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(0, 217, 255, 0.5);
+}
+
+.no-logs {
+    text-align: center;
+    padding: 60px 20px;
+    color: #666;
+}
+
+.logs-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.logs-container::-webkit-scrollbar-track {
+    background: rgba(0, 217, 255, 0.05);
+    border-radius: 10px;
+}
+
+.logs-container::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .login-box {
+        padding: 40px 30px;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
